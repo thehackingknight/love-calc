@@ -1,47 +1,57 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Love Calculator</title>
 </head>
+
 <body>
-    <div style="" class="bg-light mt-4 container">
-        <div class="calculator">
-        <div class="res">
-            <h2 style="text-align: center;" class="text-danger">RESULTS:</h2>
-            <p style="text-align: center;" id="percentage">0.00%</p>
-            <p id="result"></p>
-        </div>
-        <form id="calc-form">
-            <div class="row">
-            <div class="form-group col-sm">
-                <label for="name">Your name:</label><br>
-                <input class="form-control" type="text" id="name" name="name">
-            </div>
-            <div class="form-group col-sm">
-                <label for="p-name">Your partner's name:</label><br>
-                <input class="form-control" type="text" id="p-name" name="p-name">
-            </div>
-        </div>
-            <div style="text-align: center;" class="form-group">
-                <button class="btn btn-danger">Calculate</button>
-            </div>
-        </form>
+    <div id="body" class="card bg-light mt-4 container">
+        <div class="card-body calculator">
+            <!--<img src="/static/assets/lvbg2.jpg">-->
+            <div id="calc-body">
+                <div class="res">
+                    <h2 style="text-align: center;" class="text-danger">RESULTS:</h2>
+                    <p style="text-align: center;" id="percentage">0.00%</p>
+                    <p id="result"></p>
+                </div>
+                <form id="calc-form">
+                    <div class="row">
+                        <div class="form-group col-sm">
+                            <label for="name">Your name:</label><br>
+                            <input class="form-control" type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="p-name">Your partner's name:</label><br>
+                            <input class="form-control" type="text" id="p-name" name="p-name">
+                        </div>
+                    </div>
+                    <div style="text-align: center;" class="form-group">
+                        <button class="btn btn-danger">Calculate</button>
+                    </div>
+                </form>
 
-        <div id="res" class="col-sm">
-        <div class="res"></div>
+                <div id="res" class="col-sm">
+                    <div class="res"></div>
 
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>By <strong><a href="https://twitter.com/clickbait_4587" target="_blank">Clickbait4587</a></strong></p>
+        </footer>
     </div>
 
-  
-    </div>
-</div>
-<script src="/static/script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
+
 </html>

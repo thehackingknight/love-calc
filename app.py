@@ -24,9 +24,9 @@ def index():
 
         response = requests.request("GET", url, headers=headers, params=querystring)
         res = json.loads(response.text)
-        print(f"RESULT: {res}")
+        #print(f"RESULT: {res}")
         return res
 
 if __name__ == "__main__":
     
-    app.run(debug=True)
+    app.run()

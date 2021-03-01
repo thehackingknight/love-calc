@@ -1,18 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-body{
-    font-family:'Courier New', Courier, monospace;
+body {
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    background: url('./assets/lvbg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.res p{font-family: 'Orbitron', sans-serif;
-font-weight: bolder;
-font-size: 1.2rem;}
 
-.calculator{
+.res p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.calculator {
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
     padding: 30px;
-    height: 500px
+    height: 500px;
 }
 
-h1, h2, h3, h4, h5, h6, label {
+#body {
+    border-radius: 10ppx;
+}
+
+.calculator img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    background-size: contain;
+}
+
+#calc-body {
+    position: relative;
+    z-index: 2;
+    border: 2px solid rgb(230, 12, 132);
+    border-radius: 2px;
+    padding: 5px;
+    background: rgba(212, 212, 212, 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
     font-weight: bold;
 }
